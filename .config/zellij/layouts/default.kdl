@@ -1,0 +1,7 @@
+layout {
+    pane command="nvim"
+    pane split_direction="vertical" {
+        pane size="70%"
+        pane size="30%"
+    }
+}
