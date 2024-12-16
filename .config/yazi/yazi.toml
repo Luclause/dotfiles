@@ -1,0 +1,14 @@
+[manager]
+show_hidden = true
+linemode = "size_and_mtime"
+
+[flavour]
+use = "ayu-dark"
+
+[preview]
+wrap = "yes"
+
+[open]
+append_rules = [
+  { name = "*", use = [ "nvim"] },
+]
