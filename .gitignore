@@ -1,8 +1,9 @@
 # WARN: EXCLUDE - ALL
 *
 
-# WARN: EXCLUDE - .gitignore
+# NOTE: Snork - Git
 !.gitignore
+!.gitconfig
 
 
 # INFO: Snork - My Config
