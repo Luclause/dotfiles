@@ -1,0 +1,43 @@
+# WARN: EXCLUDE - unless explicitly included
+*
+
+# WARN: Don't forget this
+!.gitignore
+
+
+# INFO: My Configuration
+!.config/
+
+# INFO: Neovim
+!.config/nvim/
+!.config/nvim/*
+
+# WARN: EXCLUDE - Lazy lockfile
+.config/nvim/lazy-lock.json
+
+
+# INFO: ML4W Hyprland Custom Configuration
+!dotfiles/
+!dotfiles/.config/
+
+# INFO: ML4W - Auto-Install/Update
+!.ml4w-hyprland/
+!.ml4w-hyprland/hook.sh
+!.ml4w-hyprland/automation.sh
+
+# INFO: ML4W - Zsh
+!.zshrc
+!dotfiles/.config/zshrc/
+!dotfiles/.config/zshrc/05-init-snork
+!dotfiles/.config/zshrc/15-aliases-snork
+!dotfiles/.config/zshrc/25-customization-snork
+
+# INFO: ML4W - Hyprland
+!dotfiles/.config/hypr/
+!dotfiles/.config/hypr/conf/
+!dotfiles/.config/hypr/conf/custom.conf
+
+# INFO: ML4W - Keybindings
+!dotfiles/.config/hypr/conf/keybindings
+!dotfiles/.config/hypr/conf/keybindings/snork.conf
+
