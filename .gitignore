@@ -13,7 +13,10 @@
 # INFO: Snork - Neovim
 !.config/nvim/
 !.config/nvim/*
-
+!.config/nvim/lua/
+!.config/nvim/lua/*
+!.config/nvim/lua/plugins/
+!.config/nvim/lua/plugins/*
 
 # WARN: EXCLUDE - lazy lockfile
 .config/nvim/lazy-lock.json
