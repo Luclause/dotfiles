@@ -28,5 +28,5 @@ return {
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
 
   -- Media
-  { import = "astrocommunity.media/codesnap-nvim"},
+  { import = "astrocommunity.media/codesnap-nvim" },
 }
