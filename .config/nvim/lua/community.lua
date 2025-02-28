@@ -21,8 +21,8 @@ return {
   -- Diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
-  -- Scrolling
-  { import = "astrocommunity.scrolling.mini-animate" },
+  -- WARN: Animations conflict with transparency (ew)
+  -- { import = "astrocommunity.scrolling.mini-animate" },
 
   -- Recipes
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
