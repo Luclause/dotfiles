@@ -1,56 +1,81 @@
+local prefix = "<leader>a"
+local user = vim.env.USER or "User"
+
+vim.api.nvim_create_autocmd("User", {
+  pattern = "CodeCompanionChatAdapter",
+  callback = function(args)
+    if args.data.adapter == nil or vim.tbl_isempty(args.data) then
+      return
+    end
+    vim.g.llm_name = args.data.adapter.name
+  end,
+})
+
 return {
-  "olimorris/codecompanion.nvim",
-
-  config = true,
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    "nvim-treesitter/nvim-treesitter",
-  },
-
-  opts = {
-    adapters = {
-
-      -- Qwen 2.5 Coder 14B Instruct
-      qwen_coder = function()
-        return require("codecompanion.adapters").extend("ollama", {
-          name = "qwen_coder",
-          schema = { model = { default = "qwen2.5:14b-instruct" } },
-        })
-      end,
-    },
-
-    strategies = {
-
-      -- NOTE: CHAT BUFFER
-      chat = {
-        adapter = "qwen_coder",
-
-        keymaps = {
-          send = { modes = { n = "<C-s>", i = "<C-s>" } }, -- Send message
-          close = { modes = { n = "<C-c>", i = "<C-c>" } }, -- Close chat
-        },
-
-        -- `/` commands allow dynamic context insertion into the chat buffer
-        -- via files, date/time, and other content
-        slash_commands = {
-          ["file"] = {
-            -- Location to the slash command in CodeCompanion
-            callback = "strategies.chat.slash_commands.file",
-            description = "Select a file using telescope",
-            opts = {
-              -- Other options include 'default', 'mini_pick', 'fzf_lua', snacks
-              provider = "telescope",
-              contains_code = true,
+  {
+    "olimorris/codecompanion.nvim",
+    cmd = { "CodeCompanion", "CodeCompanionActions", "CodeCompanionToggle", "CodeCompanionAdd", "CodeCompanionChat" },
+    opts = {
+      adapters = {
+        qwen_coder_25 = function()
+          return require("codecompanion.adapters").extend("ollama", {
+            name = "qwen_coder_25",
+            schema = {
+              model = {
+                default = "qwen2.5:14b-instruct",
+              },
             },
+          })
+        end,
+      },
+      strategies = {
+        chat = {
+          adapter = "qwen_coder_25",
+          roles = {
+            llm = "  CodeCompanion",
+            user = " " .. user:sub(1, 1):upper() .. user:sub(2),
+          },
+          keymaps = {
+            close = { modes = { n = "q", i = "<C-c>" } },
+            stop = { modes = { n = "<C-c>" } },
           },
         },
+        inline = { adapter = "qwen_coder_25" },
+        agent = { adapter = "qwen_coder_25" },
       },
-      -- Additional options
       display = {
         chat = {
           show_settings = true,
+          render_headers = false,
         },
       },
     },
+    keys = {
+      { prefix .. "a", "<cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "Action Palette" },
+      { prefix .. "c", "<cmd>CodeCompanionChat<cr>", mode = { "n", "v" }, desc = "New Chat" },
+      { prefix .. "A", "<cmd>CodeCompanionAdd<cr>", mode = "v", desc = "Add Code" },
+      { prefix .. "i", "<cmd>CodeCompanion<cr>", mode = "n", desc = "Inline Prompt" },
+      { prefix .. "C", "<cmd>CodeCompanionToggle<cr>", mode = "n", desc = "Toggle Chat" },
+    },
+  },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      spec = {
+        { prefix, group = "ai", icon = "󱚦 ", mode = { "n", "v" } },
+      },
+    },
+  },
+  {
+    "folke/edgy.nvim",
+    optional = true,
+    opts = function(_, opts)
+      opts.right = opts.right or {}
+      table.insert(opts.right, {
+        ft = "codecompanion",
+        title = "CodeCompanion",
+        size = { width = 70 },
+      })
+    end,
   },
 }
