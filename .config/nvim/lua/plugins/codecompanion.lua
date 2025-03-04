@@ -35,6 +35,8 @@ return {
             llm = "  CodeCompanion",
             user = " " .. user:sub(1, 1):upper() .. user:sub(2),
           },
+
+          -- TODO: Move these to AstroNvim keymaps
           keymaps = {
             close = { modes = { n = "q", i = "<C-c>" } },
             stop = { modes = { n = "<C-c>" } },
@@ -50,6 +52,8 @@ return {
         },
       },
     },
+
+    -- TODO: Move these to AstroNvim keymaps
     keys = {
       { prefix .. "a", "<cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "Action Palette" },
       { prefix .. "c", "<cmd>CodeCompanionChat<cr>", mode = { "n", "v" }, desc = "New Chat" },
