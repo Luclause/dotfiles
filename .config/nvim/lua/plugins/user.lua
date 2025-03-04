@@ -1,6 +1,9 @@
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
+vim.keymap.set({ 'n', 'v' }, '<PageUp>', '<PageUp>zz')
+vim.keymap.set({ 'n', 'v' }, '<PageDown>', '<PageDown>zz')
+
 ---@type LazySpec
 return {
 
