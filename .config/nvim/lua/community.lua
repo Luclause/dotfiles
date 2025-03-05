@@ -12,10 +12,6 @@ return {
 
   -- Color Schemes (Themes)
   -- { import = "astrocommunity.colorscheme.nordic-nvim" },
-  -- { import = "astrocommunity.colorscheme.tokyodark-nvim" },
-  -- { import = "astrocommunity.colorscheme.nord-nvim" },
-  -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  -- { import = "astrocommunity.colorscheme.gruvbox-nvim" },
   -- { import = "astrocommunity.colorscheme.catppuccin" },
 
   -- Diagnostics
