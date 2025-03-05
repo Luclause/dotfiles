@@ -27,18 +27,18 @@
 !.config/zellij/layouts/
 !.config/zellij/layouts/*
 
-
-
 # INFO: ML4W - Custom Config
 !dotfiles/
 !dotfiles/.config/
-
 
 # INFO: ML4W - Auto-Install/Update
 !.ml4w-hyprland/
 !.ml4w-hyprland/hook.sh
 !.ml4w-hyprland/automation.sh
 
+# INFO: ML4W - Kitty
+!dotfiles/.config/kitty/
+!dotfiles/.config/kitty/custom.conf
 
 # INFO: ML4W - Zsh
 !.zshrc
@@ -46,7 +46,6 @@
 !dotfiles/.config/zshrc/05-init-snork
 !dotfiles/.config/zshrc/15-aliases-snork
 !dotfiles/.config/zshrc/25-customization-snork
-
 
 # INFO: ML4W - Hyprland
 !dotfiles/.config/hypr/
