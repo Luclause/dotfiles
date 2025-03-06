@@ -10,6 +10,7 @@ return {
       "python",
       "terraform",
       "json",
+      "yaml",
       -- add more arguments for adding more treesitter parsers
     },
   },
