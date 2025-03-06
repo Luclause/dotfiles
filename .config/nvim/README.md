@@ -1,34 +1,23 @@
-# AstroNvim Template
+# My Neovim Configuration
+*based on [AstroNvim](https://github.com/AstroNvim/AstroNvim)* 
 
-**NOTE:** This is for AstroNvim v4+
+You could say my configuration is kinda messy - that's because it is. 
+Some plugins fit in nicely while other more complex ones I seem to wrestle 
+with its integration with AstroNvim.
 
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+> You're free to clone this, rip it apart, and transform it as your own :)
+
+## Prequisites
+
+- A Nerd Font ([JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip))
+- These software libraries: `python` `node` `npm`
+- These terminal/CLI tools: `lazygit` `ripgrep` `fd` `fzf`
 
 ## 🛠️ Installation
 
 #### Make a backup of your current nvim and shared folder
 
-```shell
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
-mv ~/.cache/nvim ~/.cache/nvim.bak
-```
+1. Clone this repository into a separate directory
+2. Copy contents of my `dotfiles/.config/nvim` into your `$HOME/.config/nvim` as desired
 
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
-
-```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
-```
-
-#### Start Neovim
-
-```shell
-nvim
-```
+> Alternatively, `git sparse-checkout` is an option if you'd like to stay updated with my config
