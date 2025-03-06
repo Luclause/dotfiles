@@ -21,7 +21,7 @@ return {
   -- { import = "astrocommunity.scrolling.mini-animate" },
 
   -- Recipes
-  { import = "astrocommunity.recipes.telescope-nvchad-theme" },
+  -- { import = "astrocommunity.recipes.telescope-nvchad-theme" },
 
   -- Media
   { import = "astrocommunity.media/codesnap-nvim" },
