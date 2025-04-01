@@ -68,3 +68,4 @@ return {
     cmd = { "TodoTrouble", "TodoTelescope", "TodoLocList", "TodoQuickFix" },
   },
 }
+

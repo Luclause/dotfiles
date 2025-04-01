@@ -41,7 +41,6 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
-      -- "basedpyright",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -99,9 +98,9 @@ return {
     },
     -- A custom `on_attach` function to be run after the default `on_attach` function
     -- takes two parameters `client` and `bufnr`  (`:h lspconfig-setup`)
-    -- on_attach = function(client, bufnr)
-    -- this would disable semanticTokensProvider for all clients
-    -- client.server_capabilities.semanticTokensProvider = nil
-    -- end,
+    on_attach = function(client, bufnr)
+      -- this would disable semanticTokensProvider for all clients
+      -- client.server_capabilities.semanticTokensProvider = nil
+    end,
   },
 }
