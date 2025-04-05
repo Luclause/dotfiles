@@ -6,11 +6,19 @@
 # Snork
 # -----------------------------------------------------
 
+# zoxide
 alias cd="z"
+
+# bat
 alias cat="bat --color=always --line-range :500"
 
-alias snorkconf="nvim ~/dotfiles"
+# zsh
+alias zshconfig="nvim ~/dotfiles"
 alias zshreload="source ~/dotfiles/.zshrc"
 
+# kitty
 alias kssh="kitten ssh"
+
+# Python 
+alias pyactivate="source .venv/bin/activate"
 
