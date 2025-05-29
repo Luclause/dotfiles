@@ -22,3 +22,6 @@ alias zshreload="source ~/dotfiles/.zshrc"
 # Python 
 alias pyactivate="source .venv/bin/activate"
 
+# lazydocker
+alias lzdocker="lazydocker"
+
