@@ -13,7 +13,7 @@ alias cd="z"
 alias cat="bat --color=always --line-range :500"
 
 # zsh
-alias zshconfig="nvim ~/dotfiles"
+alias zshconfig="nvim ~/dotfiles/.config/zshrc"
 alias zshreload="source ~/dotfiles/.zshrc"
 
 # kitty
