@@ -26,3 +26,6 @@ if [ -f '/home/snork/google-cloud-sdk/path.zsh.inc' ]; then . '/home/snork/googl
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/snork/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/snork/google-cloud-sdk/completion.zsh.inc'; fi
+
+# GOBIN
+export PATH=$PATH:/home/snork/go/bin

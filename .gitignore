@@ -46,6 +46,7 @@
 !dotfiles/.config/zshrc/05-init-snork
 !dotfiles/.config/zshrc/15-aliases-snork
 !dotfiles/.config/zshrc/25-customization-snork
+!dotfiles/.config/zshrc/35-autostart-snork
 
 # INFO: ML4W - Hyprland
 !dotfiles/.config/hypr/

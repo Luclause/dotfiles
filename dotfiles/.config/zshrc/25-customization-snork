@@ -29,9 +29,5 @@ eval "$(atuin init zsh)"
 # -------------------------------------------------------------------
 
 . "$HOME/.local/bin/env"
-# eval "$(uv init zsh)" # INFO: already initialized by install
-
-# uv autocompletion
-# autoload -Uz compinit && compinit # INFO: if needed when error
-eval "$(uv generate-shell-completion zsh)"
+eval "$(uv generate-shell-completion zsh)" # uv autocompletion
 
