@@ -1,0 +1,27 @@
+# -----------------------------------------------------
+# ALIASES
+# -----------------------------------------------------
+
+# -----------------------------------------------------
+# Snork
+# -----------------------------------------------------
+
+# zoxide
+alias cd="z"
+
+# bat
+alias cat="bat --color=always --line-range :500"
+
+# zsh
+alias zshconfig="nvim ~/dotfiles/.config/zshrc"
+alias zshreload="source ~/dotfiles/.zshrc"
+
+# kitty
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+
+# Python 
+alias pyactivate="source .venv/bin/activate"
+
+# lazydocker
+alias lzdocker="lazydocker"
+

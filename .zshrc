@@ -1,1 +1,1 @@
-/home/snork/dotfiles/.zshrc
+/home/snork/.mydotfiles/com.ml4w.dotfiles.stable/.zshrc
