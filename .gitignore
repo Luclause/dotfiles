@@ -38,7 +38,7 @@
 
 # INFO: ML4W - Kitty
 !dotfiles/.config/kitty/
-!dotfiles/.config/kitty/custom.conf
+dotfiles/.config/kitty/custom.conf
 
 # INFO: ML4W - Zsh
 !.zshrc
