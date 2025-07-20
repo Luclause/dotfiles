@@ -304,6 +304,7 @@ themes {
 // Default: default
 //
 theme "nord"
+// theme "catppuccin-macchiato"
 
 // The name of the default layout to load on startup
 // Default: "default"
@@ -373,8 +374,7 @@ default_layout "basic"
 layout_dir "/home/snork/.config/zellij/layouts"
 
 // The folder in which Zellij will look for themes
-//
-// theme_dir "/path/to/my/theme_dir"
+theme_dir "/home/snork/.config/zellij/themes"
 
 // Enable or disable the rendering of styled and colored underlines (undercurl).
 // May need to be disabled for certain unsupported terminals

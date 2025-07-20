@@ -26,6 +26,8 @@
 !.config/zellij/*
 !.config/zellij/layouts/
 !.config/zellij/layouts/*
+!.config/zellij/themes/
+!.config/zellij/themes/*
 
 # INFO: ML4W - Custom Config
 !dotfiles/
