@@ -1,16 +1,16 @@
 # WARN: EXCLUDE - ALL
 *
 
-# NOTE: Snork - Git
+# NOTE: Git
 !.gitignore
 !.gitconfig
 
+###################
 
-# INFO: Snork - My Config
+# INFO: My Configuration
 !.config/
 
-
-# INFO: Snork - Neovim
+# INFO: .config/nvim
 !.config/nvim/
 !.config/nvim/*
 !.config/nvim/lua/
@@ -18,10 +18,10 @@
 !.config/nvim/lua/plugins/
 !.config/nvim/lua/plugins/*
 
-# WARN: EXCLUDE - lazy lockfile
+# WARN: EXCLUDE
 .config/nvim/lazy-lock.json
 
-# INFO: Snork - Zellij
+# INFO: .config/zellij
 !.config/zellij/
 !.config/zellij/*
 !.config/zellij/layouts/
@@ -29,9 +29,12 @@
 !.config/zellij/themes/
 !.config/zellij/themes/*
 
-# INFO: ML4W - Custom Config
-!dotfiles/
-!dotfiles/.config/
+###################
+
+# INFO: ML4W Hyprland dotfiles
+!.mydotfiles/
+!.mydotfiles/com.ml4w.dotfiles.stable/
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/
 
 # INFO: ML4W - Auto-Install/Update
 !.ml4w-hyprland/
@@ -39,24 +42,24 @@
 !.ml4w-hyprland/automation.sh
 
 # INFO: ML4W - Kitty
-!dotfiles/.config/kitty/
-dotfiles/.config/kitty/custom.conf
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/kitty/
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/kitty/custom.conf
 
 # INFO: ML4W - Zsh
-!.zshrc
-!dotfiles/.config/zshrc/
-!dotfiles/.config/zshrc/05-init-snork
-!dotfiles/.config/zshrc/15-aliases-snork
-!dotfiles/.config/zshrc/25-customization-snork
-!dotfiles/.config/zshrc/35-autostart-snork
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/zshrc/
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/zshrc/05-init-snork
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/zshrc/15-aliases-snork
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/zshrc/25-customization-snork
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/zshrc/35-autostart-snork
 
 # INFO: ML4W - Hyprland
-!dotfiles/.config/hypr/
-!dotfiles/.config/hypr/conf/
-!dotfiles/.config/hypr/conf/custom.conf
-
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/hypr/
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/hypr/conf/
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/hypr/conf/custom.conf
 
 # INFO: ML4W - Keybindings
-!dotfiles/.config/hypr/conf/keybindings
-!dotfiles/.config/hypr/conf/keybindings/snork.conf
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/hypr/conf/keybindings
+!.mydotfiles/com.ml4w.dotfiles.stable/.config/hypr/conf/keybindings/snork.conf
+
+####################
 
