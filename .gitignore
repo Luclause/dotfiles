@@ -1,9 +1,10 @@
 # WARN: EXCLUDE - ALL
 *
 
-# NOTE: Git
+# NOTE: Miscellaneous
 !.gitignore
 !.gitconfig
+!README.md
 
 ###################
 
