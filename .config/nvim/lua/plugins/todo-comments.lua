@@ -13,11 +13,11 @@ return {
         -- signs = false, -- configure signs for some keywords individually
       },
       TODO = { icon = " ", color = "info" },
-      HACK = { icon = " ", color = "warning" },
-      WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
-      PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
-      NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
-      TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
+      HACK = { icon = " ", color = "warning", alt = { "BUG", "CAUTION" } },
+      WARN = { icon = " ", color = "error", alt = { "ERROR", "BAD", "STOP" } },
+      PERF = { icon = " ", alt = { "OPTIM", "FIXME", "REFACTOR", "CONSIDER" } },
+      NOTE = { icon = " ", color = "hint" },
+      TEST = { icon = "⏲ ", color = "test", alt = { "TEST", "BENCHMARK" } },
     },
     gui_style = {
       fg = "NONE", -- The gui style to use for the fg highlight group.
