@@ -21,7 +21,7 @@ return {
         "debugpy",
 
         -- install linters
-        "golangci-lint",
+        -- "golangci-lint",
 
         -- install any other package
         "tree-sitter-cli",
