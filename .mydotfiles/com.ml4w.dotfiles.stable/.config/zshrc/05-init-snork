@@ -29,3 +29,6 @@ if [ -f '/home/snork/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/snork
 
 # GOBIN
 export PATH=$PATH:/home/snork/go/bin
+
+# Node Version Manager (nvm)
+source /usr/share/nvm/init-nvm.sh
