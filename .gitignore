@@ -19,6 +19,12 @@
 !.config/nvim/lua/plugins/
 !.config/nvim/lua/plugins/*
 
+# INFO: .config/tmux
+!.config/tmux/
+!.config/tmux/*
+!.config/tmux/scripts/
+!.config/tmux/scripts/*
+
 # WARN: EXCLUDE
 .config/nvim/lazy-lock.json
 
