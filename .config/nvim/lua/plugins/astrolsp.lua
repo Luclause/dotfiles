@@ -24,6 +24,7 @@ return {
           "terraform",
           "json",
           "go",
+          "gohtml",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
