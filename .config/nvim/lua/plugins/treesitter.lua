@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Treesitter
 
 ---@type LazySpec
@@ -13,6 +11,9 @@ return {
       "terraform",
       "json",
       "yaml",
+      "html",
+      "go",
+      "gotmpl",
       -- add more arguments for adding more treesitter parsers
     },
   },
