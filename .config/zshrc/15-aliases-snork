@@ -13,8 +13,8 @@ alias cd="z"
 alias cat="bat --color=always --line-range :500"
 
 # zsh
-alias zshconfig="nvim ~/.mydotfiles/com.ml4w.dotfiles/.config/zshrc"
-alias reload="source ~/.mydotfiles/com.ml4w.dotfiles/.zshrc"
+alias zconfig="nvim ~/.config/zshrc"
+alias reload="source ~/.zshrc"
 
 # kitty
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"

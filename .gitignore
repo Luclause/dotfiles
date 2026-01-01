@@ -38,30 +38,22 @@
 
 ###################
 
-# INFO: ML4W Hyprland dotfiles
-!.mydotfiles/
-!.mydotfiles/com.ml4w.dotfiles/
-!.mydotfiles/com.ml4w.dotfiles/.config/
-
 # INFO: ML4W - Kitty
-!.mydotfiles/com.ml4w.dotfiles/.config/kitty/
-!.mydotfiles/com.ml4w.dotfiles/.config/kitty/custom.conf
+!.config/kitty/
+!.config/kitty/custom.conf
 
 # INFO: ML4W - Zsh
-!.mydotfiles/com.ml4w.dotfiles/.config/zshrc/
-!.mydotfiles/com.ml4w.dotfiles/.config/zshrc/05-init-snork
-!.mydotfiles/com.ml4w.dotfiles/.config/zshrc/15-aliases-snork
-!.mydotfiles/com.ml4w.dotfiles/.config/zshrc/25-customization-snork
-!.mydotfiles/com.ml4w.dotfiles/.config/zshrc/35-autostart-snork
+!.config/zshrc/
+!.config/zshrc/*
 
 # INFO: ML4W - Hyprland
-!.mydotfiles/com.ml4w.dotfiles/.config/hypr/
-!.mydotfiles/com.ml4w.dotfiles/.config/hypr/conf/
-!.mydotfiles/com.ml4w.dotfiles/.config/hypr/conf/custom.conf
+!.config/hypr/
+!.config/hypr/conf/
+!.config/hypr/conf/custom.conf
 
 # INFO: ML4W - Keybindings
-!.mydotfiles/com.ml4w.dotfiles/.config/hypr/conf/keybindings
-!.mydotfiles/com.ml4w.dotfiles/.config/hypr/conf/keybindings/snork.conf
+!.config/hypr/conf/keybindings
+!.config/hypr/conf/keybindings/snork.conf
 
 ####################
 
