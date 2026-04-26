@@ -6,7 +6,6 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.python-ruff" },
   
   -- Diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
